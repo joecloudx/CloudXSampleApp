@@ -28,6 +28,10 @@ class InterstitialAdActivity : AppCompatActivity(), CloudXInterstitialListener {
         setupRecyclerView()
         createInterstitialAd()
 
+        binding.loadAdButton.setOnClickListener {
+            loadInterstitialAd()
+        }
+
         binding.showAdButton.setOnClickListener {
             showInterstitialAd()
         }
@@ -61,12 +65,13 @@ class InterstitialAdActivity : AppCompatActivity(), CloudXInterstitialListener {
 
     private fun createInterstitialAd() {
         // Create interstitial ad
-        interstitialAd = CloudX.createInterstitial("your-interstitial-placement-name")
+        interstitialAd = CloudX.createInterstitial("interstitial")
 
         // Set listener
         interstitialAd.listener = this
+    }
 
-        // Load the ad
+    private fun loadInterstitialAd() {
         interstitialAd.load()
     }
 

@@ -8,4 +8,9 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="purple_primary">#7F68D0</color>
+
+    <!-- Status colors -->
+    <color name="status_pending">#FFC107</color>
+    <color name="status_failure">#F44336</color>
+    <color name="status_success">#4CAF50</color>
 </resources>

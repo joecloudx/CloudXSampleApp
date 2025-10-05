@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">CloudXSampleApp</string>
+    <string name="show_banner_ad">Show Banner Ad</string>
+    <string name="show_interstitial_ad">Show Interstitial Ad</string>
+    <string name="load_ad">Load</string>
+    <string name="show_ad">Show</string>
+
+    <!-- Event statuses -->
+    <string name="status_pending">⏳ Pending</string>
+    <string name="status_success">✅ Success</string>
+    <string name="status_failure">❌ Failure</string>
 </resources>

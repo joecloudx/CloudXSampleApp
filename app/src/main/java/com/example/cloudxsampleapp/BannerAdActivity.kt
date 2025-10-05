@@ -61,7 +61,7 @@ class BannerAdActivity : AppCompatActivity(), CloudXAdViewListener {
 
     private fun createBannerAd() {
         // Create banner ad
-        bannerAd = CloudX.createBanner("testbanner")
+        bannerAd = CloudX.createBanner("banner")
 
         // Set listener
         bannerAd.listener = this

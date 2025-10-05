@@ -5,18 +5,19 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/banner_ad_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Show Banner Ad" />
+        android:text="@string/show_banner_ad" />
 
     <Button
         android:id="@+id/interstitial_ad_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Show Interstitial Ad" />
+        android:text="@string/show_interstitial_ad" />
 
 </LinearLayout>

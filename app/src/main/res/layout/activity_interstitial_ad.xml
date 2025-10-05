@@ -8,17 +8,33 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android.layout_height="match_parent"
+        android:layout_height="match_parent"
         android:gravity="top|center_horizontal"
         android:orientation="vertical"
         android:padding="16dp"
         tools:context=".InterstitialAdActivity">
 
-        <Button
-            android:id="@+id/showAdButton"
+        <LinearLayout
+            style="?android:attr/buttonBarStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Show Interstitial Ad" />
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/loadAdButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/load_ad" />
+
+            <Button
+                android:id="@+id/showAdButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/show_ad" />
+        </LinearLayout>
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/event_recycler_view"
